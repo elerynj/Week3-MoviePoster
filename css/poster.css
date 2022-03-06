@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 * {
@@ -29,12 +30,50 @@ html {
     100% {transform: translateY(0);}
 
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(82, 77, 77, 0.671);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-container-modal {
+    width: 300px;
+}
+
 .movie-poster-container img {
     margin-top: 2rem;
     height: 500px;
     border-radius: 20px;
     position: relative;
     bottom: -50rem;
+    cursor: pointer;
     animation: slide-from-bottom 3.5s ease-in-out forwards;
 }
 
