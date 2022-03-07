@@ -1,9 +1,9 @@
-let moviePosterContainer = document.querySelector('#movie-poster-container');
+let moviePosterContainer = document.querySelector('.movie-poster-container');
 let modal = document.querySelector('#myModal');
-let closeBtn = document.querySelector('closeBtn');
-let modalImage = document.querySelector('movie-poster-container-modal');
+let closeBtn = document.querySelector('.closeBtn');
+let modalImage = document.querySelector('.movie-poster-container-modal');
 
-moviePosterContainer.addEventListener('click', () => {
+moviePosterContainer.addEventListener('click', ()=> {
     modal.style.display = 'block';
     modalImage.src = moviePosterContainer.src;
 });

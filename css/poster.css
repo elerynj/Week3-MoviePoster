@@ -67,19 +67,12 @@ html {
     width: 300px;
 }
 
-.movie-poster-container img {
+.movie-poster img {
     margin-top: 2rem;
     height: 500px;
     border-radius: 20px;
-    position: relative;
-    bottom: -50rem;
+    position: center;
     cursor: pointer;
-    animation: slide-from-bottom 3.5s ease-in-out forwards;
-}
-
-@keyframes slide-from-bottom {
-    80% {bottom: 1.5rem;}
-    100% {bottom: 0;}
 }
 
 .movie-rating {
